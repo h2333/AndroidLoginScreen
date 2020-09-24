@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/default_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="100dp">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="207dp"
+            android:layout_height="37dp"
+            android:background="@drawable/login_user_name_bg"
+            android:drawableLeft="@drawable/user_name_icon"
+            android:hint="请输入用户名"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="207dp"
+            android:layout_height="37dp"
+            android:background="@drawable/login_psw_bg"
+            android:drawableLeft="@drawable/psw_icon"
+            android:hint="请输入密码"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="5dp"/>
+        <Button
+            android:layout_width="207dp"
+            android:layout_height="37dp"
+            android:background="@drawable/register_icon_normal"
+            android:text="登录"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即注册"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回密码"
+            android:textSize="15sp"
+            android:layout_marginLeft="160dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
